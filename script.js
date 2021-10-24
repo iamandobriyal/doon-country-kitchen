@@ -62,6 +62,7 @@ for(let i=0; i<btn.length; i++)
 }
 
 
+let cancel = document.querySelector('#cancel');
 
 
 
@@ -69,12 +70,9 @@ let ham = document.querySelector('.hamburger');
 let mob = document.querySelector('.mobile-menu');
 let d = 0;
 ham.addEventListener('click',function(){
-    if(d==0){
-        mob.classList.remove("hidden");
-        d++;
-    }
-   else{
-        mob.classList.add("hidden");
-        d--;
-   }
+    mob.classList.remove('hidden');
+})
+
+cancel.addEventListener('click',function(){
+    mob.classList.add('hidden');
 })
