@@ -84,3 +84,4 @@ ham.addEventListener('click',function(){
 cancel.addEventListener('click',function(){
     mob.classList.add('hidden');
 })
+
