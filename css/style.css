@@ -14,7 +14,7 @@ body{
     background: #f3bc59; 
 }
 .whatsapp{
-    z-index: 999;
+    z-index: 500;
     position: fixed;
     bottom: 5%;
     right: 2%;
@@ -191,9 +191,10 @@ body{
     align-items: center;
 }
 .about .container{
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .about .left img{
     height: 400px;
@@ -234,7 +235,7 @@ body{
     font-size: 14px;
 }
 .menus{
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     padding-bottom: 30px;
     overflow-x: hidden;
@@ -270,6 +271,7 @@ body{
     justify-content: space-evenly;
     margin-top: 20px;
     width: 80%;
+    margin-bottom: 10px;
 }
 .menus .row .card{
     background-color: white;
@@ -413,15 +415,17 @@ body{
 
 
 
-/* Media Screen */
+/* Mobile Media Screen */
 
 @media only screen and (max-width:1000px) {
-    
 
     .header{
         justify-content: space-between;
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .right{
+        display: none;
     }
     .brand img{
         height: 70px;
@@ -508,9 +512,13 @@ body{
         height: 100%;
     }
     .menus .row .card{
-        width: 60%;
+        width: 65%;
         margin-bottom: 20px;
         height: 100%;
+        padding: 10px;
+    }
+    .menus .row .card p{
+        font-size: 11px;
     }
     .menus .row .card img{
         height: 100%;
@@ -539,28 +547,6 @@ body{
     .contact .left h1{
         font-size: 20px;
     }
-    
-
-
-
-    .right{
-        display: none;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .hamburger{
         display: block;
     }
@@ -572,16 +558,15 @@ body{
         margin: 0;
         padding: 0;
         position: fixed;
-        width: 70%;
         height: 100%;
         z-index: 1000;
         top: 0;
-        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 50%;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         animation: menu 500ms linear;
@@ -600,10 +585,11 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0;
     }
     .mobile-menu li{
-        font-size: 26px;
-        margin-top: 50px;
+        font-size: 18px;
+        margin-top: 30px;
         cursor: pointer;
     }
     .hidden{
