@@ -419,7 +419,9 @@ body{
     
 
     .header{
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-right: 10px;
+        padding-left: 10px;
     }
     .brand img{
         height: 70px;
