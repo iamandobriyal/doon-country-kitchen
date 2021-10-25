@@ -28,17 +28,25 @@ order.addEventListener('click',function()
     location.href = "#menus";
 })
 
-
+btn[0].style.backgroundColor = "#f3bc59";
 logo.addEventListener('click',function(){
     location.href = "index.html";
 })
 
 
-for(let k=0; k<menu.length; k++)
+for(let k=0; k<4; k++)
 {
     menu[k].addEventListener('click',function()
     {
         location.href = section[k];
+    })
+}
+for(let k=4; k<8; k++)
+{
+    menu[k].addEventListener('click',function()
+    {
+        location.href = section[k-4];
+        mob.classList.add('hidden');
     })
 }
 
