@@ -441,7 +441,7 @@ body{
         align-items: center;
     }
     .hero .left h1{
-        font-size: 28px;
+        font-size: px;
     }
     .hero .right{
         display: none;
@@ -620,44 +620,5 @@ body{
     }
     100%{
         transform: translateX(0%);
-    }
-}
-
-
-
-
-/* 125% Media Query */
-
-@media 
-(-webkit-min-device-pixel-ratio:1.25)
-{
-    .right{
-        width: 50%;
-    }
-    .hero .left h1{
-        font-size: 60px;
-    }
-    .hero .right{
-        margin-left: -50px;
-    }
-    .hero .right img{
-        height: 400px;
-    }
-    .menus .row{
-        width: 100%;
-    }
-    .menus .row .card{
-        width: 19%;
-        height: 100%;
-    }
-    .menus .row .card img{
-        width: 80%;
-        height: 80%;
-    }
-    .reviews h1{
-        margin-left:50px;
-    }
-    .reviews .review{
-        width: 400px;
     }
 }
