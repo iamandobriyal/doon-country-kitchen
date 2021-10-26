@@ -51,7 +51,6 @@ for(let k=4; k<8; k++)
 }
 
 let slide = [rolls,noodles,cake,snacks,platter];
-console.log(slide);
 
 for(let i=0; i<btn.length; i++)
 {
@@ -85,3 +84,19 @@ cancel.addEventListener('click',function(){
     mob.classList.add('hidden');
 })
 
+
+
+
+
+let cards = document.querySelectorAll('.card');
+let buttons = document.querySelectorAll('button');
+
+
+for(let i=0; i<44; i++)
+{
+    buttons[i+1].addEventListener('click',function(){
+        let childs = cards[i].children;
+        let header = childs[1].textContent;
+        location.href = "https://api.whatsapp.com/send/?phone=%2B917830496527&text=I want to order "+ header + "&app_absent=0";
+    })
+}
